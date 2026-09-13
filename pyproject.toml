@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Nijat Akhundzada", email = "nicataxundzada@gmail.com" }
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.11,<3.14"
 keywords = ["ai", "chatbot", "langchain", "langgraph", "ollama"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -16,13 +16,24 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
+    "ddgs>=9.16.0",
     "ipykernel>=7.3.0",
     "jupyterlab>=4.5.6",
+    "langchain>=1.2.13",
     "langchain-ollama>=1.1.0",
+    "langfuse>=4.7.0",
     "langgraph>=1.2.11",
+    "langgraph-checkpoint-sqlite>=3.1.1",
     "python-dotenv>=1.2.3",
+    "requests>=2.32.0",
+    "yfinance>=1.7.0",
 ]
 
 [build-system]
 requires = ["uv_build>=0.12.6,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.7",
+]

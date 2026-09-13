@@ -9,3 +9,13 @@ wheels/
 # Virtual environments
 .venv
 .env
+langfuse/.env
+
+# Local runtime state
+chatbot.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Jupyter's automatically generated checkpoints
+.ipynb_checkpoints/
