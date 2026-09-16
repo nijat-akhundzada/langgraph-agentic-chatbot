@@ -16,6 +16,7 @@ chatbot.db
 *.db-journal
 *.db-shm
 *.db-wal
+chroma_db/
 
 # Jupyter's automatically generated checkpoints
 .ipynb_checkpoints/
